@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de memoria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <h1 class="text-center my-3">Equipos del mundo.</h1>
+            </div>
+            <div class="col-10">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><span class="nav-link">Jugador: <span class="jugador">Pepe</span> </span></li>
+                    <li class="nav-item"><span class="nav-link">Intentos: <spanc class="intentos">0</span></span></li>
+                    <li class="nav-item"><span class="nav-link">Aciertos: <span class="aciertos">0</span></span></li>
+                    <li class="nav-item"><span class="nav-link">Tiempo: <span class="tiempo">0</span></span></li>
+                    <li class="nav-item"><span class="nav-link">Nivel: <span class="nivel">1</span></span></li>
+                    <li class="nav-item"><span class="btn-iniciar btn btn-success">Iniciar</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                <h2 class="text-primary"> Tablero de juego </h2>
+                <hr>
+                <div class="row g-3 tablero">
+                        <!--- Aqui van las imagenes ---> 
+
+                </div>
+            </div>
+            <div class="col-5">
+                <table class="table my-3 records">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Jugador</th>
+                            <th>Tiempo total</th>
+                            <th>Intentos totales</th>
+                            <th>Tiempo sobrante</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Bienvenido</h1>
+            <button type="button" class="btn-close cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Nombre Jugador:</label>
+                <input type="text" class="nombreJugador form-control" id="recipient-name">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary cerrar" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary registrarJugador">Registrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/js/funciones.js"></script>
+    <script src="guardarDatos.js"></script>
+</body>
+</html>

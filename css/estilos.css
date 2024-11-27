@@ -1,0 +1,9 @@
+.altura{
+    height: 125px;
+    border-radius: 15px;
+}
+
+.tablero div img:hover{
+    transform: scale(1.2);
+    box-shadow: -1px 1px 12px -1px;
+}
